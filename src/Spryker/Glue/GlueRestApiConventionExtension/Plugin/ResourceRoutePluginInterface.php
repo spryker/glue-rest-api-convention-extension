@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * Copyright © 2016-present Spryker Systems GmbH. All rights reserved.
+ * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ */
+
+namespace Spryker\Glue\GlueRestApiConventionExtension\Plugin;
+
+use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceRouteCollectionInterface;
+
+interface ResourceRoutePluginInterface
+{
+    /**
+     * @api
+     *
+     * Specification:
+     *  - Configuration for resource routing, how http methods map to controller actions, is action is protected, also possible
+     * to add additional contextual data for action for later access when processing controller action.
+     *
+     * @param \Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceRouteCollectionInterface $resourceRouteCollection
+     *
+     * @return \Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceRouteCollectionInterface
+     */
+    public function configure(ResourceRouteCollectionInterface $resourceRouteCollection): ResourceRouteCollectionInterface;
+
+    /**
+     * @api
+     *
+     * Specification:
+     *  - Resource name this plugins handles, must be plural string. This name also is matched with request path where resource
+     * is provided.
+     *
+     * @return string
+     */
+    public function getResourceType(): string;
+
+    /**
+     * @api
+     *
+     * Specification:
+     *  - This method should return FQCN to the controller
+     *
+     * @return string
+     */
+    public function getController(): string;
+}
