@@ -13,7 +13,7 @@ use Spryker\Glue\GlueApplicationExtension\Dependency\Resource\ResourceInterface 
 interface ResourceInterface extends GlueApplicationResourceInterface
 {
     /**
-     * @return ResourceRouteCollectionInterface|null
+     * @return \Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceRouteCollectionInterface|null
      */
     public function getMatchingResourceCollection(): ?ResourceRouteCollectionInterface;
 }

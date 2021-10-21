@@ -12,7 +12,7 @@ use Generated\Shared\Transfer\GlueVersionTransfer;
 interface VersionedResourceRoutePluginInterface extends ResourceRoutePluginInterface
 {
     /**
-     * @return GlueVersionTransfer
+     * @return \Generated\Shared\Transfer\GlueVersionTransfer
      */
     public function getMatchingVersion(): GlueVersionTransfer;
 }
