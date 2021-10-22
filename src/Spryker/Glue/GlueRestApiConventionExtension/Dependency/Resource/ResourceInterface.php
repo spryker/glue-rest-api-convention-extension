@@ -5,15 +5,19 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace Spryker\Glue\GlueRestApiConventionExtension\Resource;
+namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Resource;
 
-use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceRouteCollectionInterface;
 use Spryker\Glue\GlueApplicationExtension\Dependency\Resource\ResourceInterface as GlueApplicationResourceInterface;
 
 interface ResourceInterface extends GlueApplicationResourceInterface
 {
     /**
-     * @return \Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceRouteCollectionInterface|null
+     * Specification:
+     * - retrieve the configured HTTP to action mappings for this resource
+     *
+     * @api
+     *
+     * @return \Spryker\Glue\GlueRestApiConventionExtension\Dependency\Resource\ResourceRouteCollectionInterface|null
      */
     public function getMatchingResourceCollection(): ?ResourceRouteCollectionInterface;
 }

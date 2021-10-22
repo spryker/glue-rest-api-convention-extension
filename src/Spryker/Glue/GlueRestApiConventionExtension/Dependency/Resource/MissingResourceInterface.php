@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace Spryker\Glue\GlueRestApiConventionExtension\Resource;
+namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Resource;
 
 use Spryker\Glue\GlueApplicationExtension\Dependency\Resource\MissingResourceInterface as GlueApplicationMissingResourceInterface;
 
