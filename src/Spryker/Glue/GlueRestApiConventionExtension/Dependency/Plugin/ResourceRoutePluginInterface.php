@@ -8,8 +8,9 @@
 namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 
 use Spryker\Glue\GlueRestApiConventionExtension\Dependency\Resource\ResourceRouteCollectionInterface;
+use Spryker\Glue\Kernel\ModuleNameAwareInterface;
 
-interface ResourceRoutePluginInterface
+interface ResourceRoutePluginInterface extends ModuleNameAwareInterface
 {
     /**
      * Specification:
