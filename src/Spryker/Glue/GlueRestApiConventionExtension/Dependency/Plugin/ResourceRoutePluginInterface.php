@@ -15,7 +15,7 @@ interface ResourceRoutePluginInterface extends GlueResourceRoutePluginInterface
      * @api
      *
      * Specification:
-     *  - This method should return FQCN to the controller
+     *  - This method should return FQCN to the controller.
      *
      * @return string
      */

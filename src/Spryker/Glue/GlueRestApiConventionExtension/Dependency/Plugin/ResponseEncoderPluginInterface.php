@@ -11,7 +11,7 @@ interface ResponseEncoderPluginInterface
 {
     /**
      * Specification:
-     * - Return all formats the encoder can handle
+     * - Return all formats the encoder can handle.
      *
      * @api
      *
@@ -21,7 +21,7 @@ interface ResponseEncoderPluginInterface
 
     /**
      * Specification:
-     * - Check if the given content can be encoded by this implementation
+     * - Check if the given content can be encoded by this implementation.
      *
      * @api
      *
@@ -33,7 +33,7 @@ interface ResponseEncoderPluginInterface
 
     /**
      * Specification:
-     * - Transform given content into the format these encoder implements
+     * - Transform given content into the format these encoder implements.
      *
      * @api
      *

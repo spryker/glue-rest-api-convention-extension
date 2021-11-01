@@ -15,7 +15,7 @@ interface ResponseExpanderPluginInterface
     /**
      * Specification:
      * - Copy response transfer properties into responseData so they will be encoded and send as body in
-     * the next step
+     * the next step.
      *
      * @api
      *

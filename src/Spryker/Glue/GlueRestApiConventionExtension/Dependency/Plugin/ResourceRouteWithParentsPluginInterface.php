@@ -11,8 +11,8 @@ interface ResourceRouteWithParentsPluginInterface extends ResourceRoutePluginInt
 {
     /**
      * Specification:
-     * - will return all parent resources that need to match
-     * - order of the returned parent resources is important
+     * - Will return all parent resources that need to match.
+     * - Order of the returned parent resources is important.
      *
      * @api
      *

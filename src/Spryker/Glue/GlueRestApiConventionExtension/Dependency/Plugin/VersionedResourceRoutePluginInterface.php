@@ -13,7 +13,7 @@ interface VersionedResourceRoutePluginInterface extends ResourceRoutePluginInter
 {
     /**
      * Specification:
-     * - return on which exact version this route matches
+     * - Return on which exact version this route matches.
      *
      * @api
      *
