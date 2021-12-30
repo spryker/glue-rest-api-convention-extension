@@ -10,7 +10,6 @@ namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueRequestValidationTransfer;
-use Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin\ResourceRoutePluginInterface;
 
 interface RequestAfterRoutingValidatorPluginInterface
 {
@@ -21,9 +20,9 @@ interface RequestAfterRoutingValidatorPluginInterface
      * @api
      *
      * @param \Generated\Shared\Transfer\GlueRequestTransfer $glueRequestTransfer
-     * @param \Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin\ResourceRoutePluginInterface $resourceRoutePlugin
+     * @param \Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin\RestResourceInterface $restResourcePlugin
      *
      * @return \Generated\Shared\Transfer\GlueRequestValidationTransfer
      */
-    public function validateRequest(GlueRequestTransfer $glueRequestTransfer, ResourceRoutePluginInterface $resourceRoutePlugin): GlueRequestValidationTransfer;
+    public function validateRequest(GlueRequestTransfer $glueRequestTransfer, RestResourceInterface $restResourcePlugin): GlueRequestValidationTransfer;
 }
