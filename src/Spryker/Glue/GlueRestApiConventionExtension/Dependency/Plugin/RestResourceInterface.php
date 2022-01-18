@@ -7,7 +7,6 @@
 
 namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 
-use Generated\Shared\Transfer\GlueResourceMethodCollectionTransfer;
 use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceInterface;
 
 interface RestResourceInterface extends ResourceInterface
@@ -21,14 +20,4 @@ interface RestResourceInterface extends ResourceInterface
      * @return string
      */
     public function getName(): string;
-
-    /**
-     * Specificiation:
-     * - Return declared methods.
-     *
-     * @api
-     *
-     * @return \Generated\Shared\Transfer\GlueResourceMethodCollectionTransfer
-     */
-    public function getDeclaredMethods(): GlueResourceMethodCollectionTransfer;
 }
