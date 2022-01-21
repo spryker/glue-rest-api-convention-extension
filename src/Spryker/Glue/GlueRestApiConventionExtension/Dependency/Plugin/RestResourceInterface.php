@@ -11,13 +11,4 @@ use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceInterface;
 
 interface RestResourceInterface extends ResourceInterface
 {
-    /**
-     * Specificiation:
-     * - Return convention name.
-     *
-     * @api
-     *
-     * @return string
-     */
-    public function getName(): string;
 }
