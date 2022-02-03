@@ -21,9 +21,9 @@ interface ResponseExpanderPluginInterface
      *
      * @param \Generated\Shared\Transfer\GlueResponseTransfer $glueResponseTransfer
      * @param \Generated\Shared\Transfer\GlueRequestTransfer $glueRequestTransfer
-     * @param array $responseData
+     * @param array<mixed> $responseData
      *
-     * @return array
+     * @return array<mixed>
      */
     public function expand(
         GlueResponseTransfer $glueResponseTransfer,
