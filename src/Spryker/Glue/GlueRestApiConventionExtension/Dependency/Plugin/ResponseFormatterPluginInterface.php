@@ -23,5 +23,5 @@ interface ResponseFormatterPluginInterface
      *
      * @return \Generated\Shared\Transfer\GlueResponseTransfer
      */
-    public function build(GlueResponseTransfer $glueResponseTransfer, GlueRequestTransfer $glueRequestTransfer): GlueResponseTransfer;
+    public function format(GlueResponseTransfer $glueResponseTransfer, GlueRequestTransfer $glueRequestTransfer): GlueResponseTransfer;
 }

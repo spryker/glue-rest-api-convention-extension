@@ -7,6 +7,9 @@
 
 namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 
+use Generated\Shared\Transfer\GlueRequestTransfer;
+use Generated\Shared\Transfer\GlueResponseTransfer;
+
 interface ResponseEncoderPluginInterface
 {
     /**
@@ -26,10 +29,11 @@ interface ResponseEncoderPluginInterface
      * @api
      *
      * @param mixed $content
+     * @param \Generated\Shared\Transfer\GlueRequestTransfer $glueRequestTransfer
      *
      * @return bool
      */
-    public function accepts($content): bool;
+    public function accepts($content, GlueRequestTransfer $glueRequestTransfer): bool;
 
     /**
      * Specification:
@@ -38,8 +42,9 @@ interface ResponseEncoderPluginInterface
      * @api
      *
      * @param mixed $content
+     * @param \Generated\Shared\Transfer\GlueResponseTransfer $glueResponseTransfer
      *
      * @return string
      */
-    public function encode($content): string;
+    public function encode($content, GlueResponseTransfer $glueResponseTransfer): string;
 }
