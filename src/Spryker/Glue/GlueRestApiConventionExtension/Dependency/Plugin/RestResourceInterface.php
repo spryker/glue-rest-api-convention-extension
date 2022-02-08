@@ -9,6 +9,9 @@ namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 
 use Spryker\Glue\GlueApplicationExtension\Dependency\Plugin\ResourceInterface;
 
+/**
+ * Interface that must be implemented by all Resource classes follwed Rest API convention.
+ */
 interface RestResourceInterface extends ResourceInterface
 {
 }

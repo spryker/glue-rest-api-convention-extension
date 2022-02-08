@@ -10,6 +10,9 @@ namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueResponseTransfer;
 
+/**
+ * Use this plugin for Rest API convention to format response.
+ */
 interface ResponseFormatterPluginInterface
 {
     /**

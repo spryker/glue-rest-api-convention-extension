@@ -10,6 +10,9 @@ namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueResponseTransfer;
 
+/**
+ * Use this plugins to expand response data.
+ */
 interface ResponseExpanderPluginInterface
 {
     /**

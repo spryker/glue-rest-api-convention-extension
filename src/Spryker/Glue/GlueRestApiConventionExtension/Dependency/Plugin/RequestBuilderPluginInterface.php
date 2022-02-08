@@ -9,6 +9,9 @@ namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 
 use Generated\Shared\Transfer\GlueRequestTransfer;
 
+/**
+ * Use this plugin for Rest API convention to build and format the request.
+ */
 interface RequestBuilderPluginInterface
 {
     /**

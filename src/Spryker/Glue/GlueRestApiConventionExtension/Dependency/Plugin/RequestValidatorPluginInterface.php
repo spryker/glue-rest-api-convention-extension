@@ -11,6 +11,9 @@ namespace Spryker\Glue\GlueRestApiConventionExtension\Dependency\Plugin;
 use Generated\Shared\Transfer\GlueRequestTransfer;
 use Generated\Shared\Transfer\GlueRequestValidationTransfer;
 
+/**
+ * Use this plugin for Rest API convention to validate headers after request is built.
+ */
 interface RequestValidatorPluginInterface
 {
     /**
