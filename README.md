@@ -4,6 +4,9 @@
 
 Extension module for the GlueRestApiConvention module.
 
+**DEPRECATED - This module is not continued at this point.**
+Please use [spryker/glue-application](https://github.com/spryker/glue-application) instead.
+
 ## Installation
 
 ```
